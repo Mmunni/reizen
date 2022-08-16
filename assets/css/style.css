@@ -78,6 +78,7 @@ h6{
     z-index: -1;
     opacity: .65;
 }
+
 .nav-item > a, .nav-item > a:hover{
     color: #fff;
     font-size: 1.5rem;
@@ -107,7 +108,7 @@ h6{
 	height: .1rem;
 	background-color: #fff;
 	right:2.4rem;
-	top: -.2rem;
+	top: -.1rem;
 }
 .login-btn::after {
 	content: "";
@@ -116,11 +117,19 @@ h6{
 	height: .1rem;
 	background-color: #fff;
 	left:2.4rem;
-	bottom: -.2rem;
+	bottom: -.1rem;
 }
 .banner{
     top: 0%;
 }
 .banner-text h1{
     color: var(--text-color);
+}
+.navbar-position{
+    position: relative;
+}
+.position{
+    position: absolute;
+    width: 90%;
+    height: 100%;
 }
