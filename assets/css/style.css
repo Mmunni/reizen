@@ -1,7 +1,7 @@
 /* reset css */
 :root{
-    --theme-background-colour: #d4344f;
-    --text-color:  #d4344f;
+    --theme-colour: #dc143c;
+   
 
 }
 *{
@@ -11,6 +11,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500;600;700&display=swap');
@@ -21,7 +22,7 @@ body{
 a{
     text-decoration: none;
     transition: .3s;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 ul{
     list-style: none;
@@ -33,6 +34,9 @@ img{
 p{
     font-size: 1.5rem;
     color: #bbb;
+    line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
 }
 h1{
     font-size: 3.9rem;
@@ -45,7 +49,7 @@ h3{
     font-size: 1.8rem;
 }
 h4{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 h5{
     font-size: 1rem;
@@ -55,7 +59,7 @@ h6{
 }
 /* header css */
 .info{
-    background-color: var(--theme-background-colour);
+    background-color: var(--theme-colour);
     height: 4rem;
     font-size: 1.2rem;
 }
@@ -63,9 +67,9 @@ h6{
     font-size: 1.2rem;
 }
 .banner {
-	height: 70vh;
+	height: 90vh;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 	background-size: cover;
 	background-position: center;
 }
@@ -76,13 +80,48 @@ h6{
     width: 100%;
     background-color: #333;
     z-index: -1;
-    opacity: .65;
+    opacity: .7;
 }
-
-.nav-item > a, .nav-item > a:hover{
-    color: #fff;
-    font-size: 1.5rem;
-  }
+.banner-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	
+}
+.banner-text h1{
+  color: var(--theme-colour);
+}
+.menu {
+  position: absolute;
+  background-color: #333;
+  width: 100%;
+  height: 90vh;
+  opacity: 1;
+  top:-0;
+  right: -100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: .3s;
+}
+.menu ul li {
+  padding-bottom: 1rem;
+}
+.menu ul li a {
+  color: #fff;
+  display: block;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  position: relative;
+}
+.menu ul li a::after{
+  content: "";
+  position: absolute;
+  background-color: var(--theme-colour);
+}
   .search-icon {
 	font-size: 1.5rem;
 	align-items: center;
@@ -91,14 +130,14 @@ h6{
 }
 .login-btn {
     color: #fff;
-    border: .1rem solid var(--text-color);
+    border: .1rem solid var(--theme-colour);
     margin: 0 1rem;
     border-radius: 2rem;
     padding: .5rem 1rem;
     position: relative;
   }
   .login-btn:hover {
-    border-color: var(--text-color);
+    border-color: var(--theme-colour);
     color: #fff;
   }
   .login-btn::before {
@@ -119,17 +158,40 @@ h6{
 	left:2.4rem;
 	bottom: -.1rem;
 }
-.banner{
-    top: 0%;
+
+  .close-menu {
+	color: #fff;
+	position: absolute;
+	right: 8rem;
+	top: 4rem;
+	cursor: pointer;
 }
-.banner-text h1{
-    color: var(--text-color);
+  .menu-icon{
+    cursor: pointer;
+    padding-right: 7rem;
+  }
+  
+/* footer css */
+.footer{
+    background-color: #ddd;
 }
-.navbar-position{
+.footer-text{
+    font-size: 1.3rem;
+}
+
+h4.footer-heading {
     position: relative;
-}
-.position{
+  
+  }
+  h4.footer-heading:after {
     position: absolute;
-    width: 90%;
-    height: 100%;
+    content: "";
+    height: .2rem;
+    width: 5rem;
+    background-color: var(--theme-colour);
+    bottom: -32%;
+    left: 0%;
+  }
+  .footer-items {
+	list-style: disclosure-closed;
 }
