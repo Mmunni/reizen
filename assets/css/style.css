@@ -33,7 +33,7 @@ img{
 }
 p{
     font-size: 1.5rem;
-    color: #bbb;
+    color: #7f8c8d;
     line-height: 2.5rem;
 	  font-weight: 300;
 	  letter-spacing: 0.05rem;
@@ -184,13 +184,17 @@ h6{
   }
   
 /* footer css */
-.footer{
-    background-color: #ddd;
+footer{
+    background-color:#dcdde1;
 }
 .footer-text{
     font-size: 1.3rem;
 }
-
+.footer-icon img {
+	width: 3.8rem;
+	margin-top: 1rem;
+	margin-right: 1rem;
+}
 h4.footer-heading {
     position: relative;
   
@@ -214,4 +218,13 @@ h4.footer-heading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.footer-btn, .footer-btn:hover {
+	margin-top: 5rem;
+	color: var(--theme-colour);
+	background-color: #000;
+	padding: 1rem 1.5rem;
+	font-size: 1.4rem;
+  outline: none;
+  border: none;
 }
