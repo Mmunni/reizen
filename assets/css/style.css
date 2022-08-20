@@ -35,8 +35,8 @@ p{
     font-size: 1.5rem;
     color: #bbb;
     line-height: 2.5rem;
-	font-weight: 300;
-	letter-spacing: 0.05rem;
+	  font-weight: 300;
+	  letter-spacing: 0.05rem;
 }
 h1{
     font-size: 3.9rem;
@@ -67,65 +67,78 @@ h6{
     font-size: 1.2rem;
 }
 .banner {
-	height: 90vh;
-	position: relative;
-	z-index: 1;
-	background-size: cover;
-	background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/banner/banner-img.jpg');
+    height: 90vh;
+    position: relative; 
+    background-size: cover;
+    background-position: center;
 }
-.banner:before {
-	content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #333;
-    z-index: -1;
-    opacity: .7;
-}
+
 .banner-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	
+} 
 .banner-text h1{
-  color: var(--theme-colour);
+    color: var(--theme-colour);
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+.logo{
+  font-size: 2.5rem;
 }
 .menu {
-  position: absolute;
-  background-color: #333;
-  width: 100%;
-  height: 90vh;
-  opacity: 1;
-  top:-0;
-  right: -100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  transition: .3s;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    height: 90vh;
+    opacity: 1;
+    top:-0;
+    right: -100vw;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+    transition: .3s;
+    visibility: hidden;
+    transition: 1s;
 }
 .menu ul li {
   padding-bottom: 1rem;
+  
 }
 .menu ul li a {
   color: #fff;
-  display: block;
+ display: inline-block;
   font-size: 2rem;
-  letter-spacing: .2rem;
+  text-transform: uppercase;
   position: relative;
 }
-.menu ul li a::after{
-  content: "";
-  position: absolute;
-  background-color: var(--theme-colour);
+.menu ul li a::after {
+	content: "";
+	position: absolute;
+	background-color: var(--theme-colour);
+	width: 0;
+	height: .2rem;
+	left: 0;
+	bottom: 0;
+  transition: width 0.5s;
 }
-  .search-icon {
-	font-size: 1.5rem;
-	align-items: center;
-	justify-content: center;
-	display: flex;
+.menu ul li a:hover::after{
+  width: 100%;
+}
+.search-field{
+  max-width: 100%;
+}
+.search-icon {
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .login-btn {
     color: #fff;
@@ -135,35 +148,35 @@ h6{
     padding: .5rem 1rem;
     position: relative;
   }
-  .login-btn:hover {
+.login-btn:hover {
     border-color: var(--theme-colour);
     color: #fff;
   }
-  .login-btn::before {
-	content: "";
-	position: absolute;
-	width: 1.2rem;
-	height: .1rem;
-	background-color: #fff;
-	right:2.4rem;
-	top: -.1rem;
+.login-btn::before {
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: .1rem;
+    background-color: #fff;
+    right:2.4rem;
+    top: -.1rem;
 }
 .login-btn::after {
-	content: "";
-	position: absolute;
-	width: 1.2rem;
-	height: .1rem;
-	background-color: #fff;
-	left:2.4rem;
-	bottom: -.1rem;
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: .1rem;
+    background-color: #fff;
+    left:2.4rem;
+    bottom: -.1rem;
 }
 
   .close-menu {
-	color: #fff;
-	position: absolute;
-	right: 8rem;
-	top: 4rem;
-	cursor: pointer;
+    color: #fff;
+    position: absolute;
+    right: 8rem;
+    top: 4rem;
+    cursor: pointer;
 }
   .menu-icon{
     cursor: pointer;
@@ -193,4 +206,12 @@ h4.footer-heading {
   }
   .footer-items {
 	list-style: disclosure-closed;
+}
+.footer-copy-text {
+	color: var(--theme-colour);
+	height: 6vh;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
