@@ -7,5 +7,5 @@ const openMenu = document.getElementById('open-menu').addEventListener('click', 
 const closeMenu = document.getElementById('close-menu').addEventListener('click', function(){
     let menu = document.getElementById('nav-menu')
     menu.style.right = '-100vw';
-    // menu.style.visibility = "hidden";   
+    menu.style.visibility = "hidden";   
 });
