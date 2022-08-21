@@ -19,6 +19,12 @@
 	width: 14rem;
 	
 }
+h1{
+   font-size: 3rem;
+}
+p{
+   font-size: 1.4rem;
+}
 }
 
 /*  Small devices (landscape phones, 576px and up) */
