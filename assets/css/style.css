@@ -1,8 +1,8 @@
 /* reset css */
 :root{
-    --theme-color:#eb3b5a;
-   
-
+    --primary-color: #d4344f;
+    --btn-hover-color:#e15169;
+   --common-box-shadow: 1px 5px 10px 3px grey;
 }
 *{
     margin: 0;
@@ -65,7 +65,7 @@ h6{
 }
 /* common section-title */
 .section-title p{
-  color: var(--theme-color);
+  color: var(--primary-color);
 }
 .card-row{
   padding-top: 8rem;
@@ -73,7 +73,7 @@ h6{
 /* common-btn */
 .common-btn{
   font-size: 1.4rem;
-  background-color: var(--theme-color);
+  background-color: var(--primary-color);
   color: #fff;
   outline: none;
   border: none;
@@ -81,14 +81,15 @@ h6{
 
 }
 .common-btn:hover{
-  background-color:#e4045a;
+  background-color:var(--btn-hover-color);
   color: #fff;
 }
+/* shadow effect */
+.place-col:hover, .card-col:hover{
+  box-shadow: var(--common-box-shadow);
+} 
 /* login-register css */
 
-.clear{
-	clear: both;
-}
 
 .main{
 	width: 100%;
@@ -97,93 +98,86 @@ h6{
 }
 
 .login-register-card{
-	width: 400px;
+	width: 40rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 
-.login-register-card-title{
-	width: 100%;
-}
-
 .login-register-card-title h3{
-	color: var(--theme-color);
+	color: var(--primary-color);
 	text-align: center;
-	padding: 20px 0;
+	padding: 2rem 0;
 	font-weight: 500;
 }
 
-.login-register-card-title h3 > span{
+.login-register-card-title h3 span{
 	color: #848484;
+  padding-left: .5rem;
 }
 
 .login-register-card-body{
 	background-color: #121212;
-	padding: 10px 0px;
-	border-radius: 5px;
+	padding: 1rem 0;
+	border-radius: .5rem;
 	width: 100%;
-	height: 350px;
+	height: 50rem;
 	overflow: hidden;
 }
 
 .login-register-card-body-top{
 	width: 100%;
 	position: relative;
-	border-bottom: 1px solid #262626;
+	border-bottom: .1rem solid #262626;
 }
 
-.login-register-card-body-top > .btn{
+ .form-btn{
 	border: 0;
 	background-color: transparent;
 	color: #848484;
-	font-size: 16px;
-	letter-spacing: 1px;
+	font-size: 1.6rem;
+	letter-spacing: .1rem;
 	font-weight: 500;
-	width: 180px;
-	padding: 20px 0;
+	width: 18rem;
+	padding: 2rem 0;
 }
 
 #login{
-	color: var(--theme-color);
+	color: var(--primary-color);
 }
 
 #register{
 	color: #848484;
 }
-
-
 #pointer-btn{
 	position: absolute;
-	bottom:-1px;
-	left: 30px;
-	width: 120px;
-	height: 2px;
-	background-color: var(--theme-color);
+	bottom:-.1rem;
+	left: 3rem;
+	width: 12rem;
+	height: .2rem;
+	background-color: var(--primary-color);
 	transition: 0.5s all ease;
 }
 
-
-
 .card-body-login{
 	width: 100%;
-	padding: 15px 20px;
+	padding: 1.5rem 2rem;
 	position: relative;
 }
 
-.card-body-login > #login-form{
+ #login-form{
 	position: absolute;
-	top: 30px;
-	left: 25px;
+	top: 3rem;
+	left: 2.5rem;
 	text-align: center;
 	transition: 0.5s all ease;
 }
 
-.card-body-login > #register-form{
+ #register-form{
 	position: absolute;
-	top: 20px;
-	left: 450px;
+	top: 2rem;
+	left: 45rem;
 	text-align: center;
 	transition: 0.5s all ease;
 }
@@ -192,28 +186,30 @@ h6{
 	border: none;
 	background-color: transparent;
 	color: #fff;
-	border-bottom: 1px solid var(--theme-color);
-	width: 350px;
-	padding: 15px 0px;
-	font-size: 15px;
-	letter-spacing: 1px;
+	border-bottom: 1px solid var(--primary-color);
+	width: 35rem;
+	padding: 1.5rem 0;
+	font-size: 1.5rem;
+	letter-spacing: .1rem;
 	outline: none;
+  margin-bottom: 1rem;
 }
 
 .submit-form{
-	background-color: var(--theme-color);
+	background-color: var(--primary-color);
 	border: none;
-	padding: 10px 25px;
-	font-size: 15px;
+	padding: 1rem 2.5rem;
+	font-size: 1.5rem;
 	cursor: pointer;
-	letter-spacing: 1px;
-	border-radius: 50px;
+	letter-spacing: .1rem;
+	border-radius: 5rem;
+  margin-top: 2.5rem;
 }
 
 
 /* header css */
 .info{
-    background-color: var(--theme-color);
+    background-color: var(--primary-color);
     height: 4rem;
     font-size: 1.2rem;
 }
@@ -229,9 +225,9 @@ h6{
   position: absolute;
   width: 100%;
   height: .1rem;
-  background-color: var(--theme-color);
+  background-color: var(--primary-color);
   left: 0;
-  bottom: 0;
+  bottom: -.5rem;
 }
 .banner {
     background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/banner/banner-img.jpg');
@@ -249,7 +245,7 @@ h6{
 	
 } 
 .banner-text h1{
-    color: var(--theme-color);
+    color: var(--primary-color);
     font-size: 5rem;
     padding-bottom: 1rem;
 }
@@ -264,14 +260,13 @@ h6{
     opacity: 1;
     top:-0;
     right: -100vw;
-    display: none;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 999;
-    visibility: hidden;
+    z-index: 1000;
     transition: .8s;
+    
 }
 .menu ul li {
   padding-bottom: 1rem;
@@ -287,7 +282,7 @@ h6{
 .menu ul li a::after {
 	content: "";
 	position: absolute;
-	background-color: var(--theme-color);
+	background-color: var(--primary-color);
 	width: 0;
 	height: .2rem;
 	left: 0;
@@ -308,14 +303,14 @@ h6{
 }
 .login-btn {
     color: #fff;
-    border: .1rem solid var(--theme-color);
+    border: .1rem solid var(--primary-color);
     margin: 0 1rem;
     border-radius: 2rem;
     padding: .5rem 1rem;
     position: relative;
   }
 .login-btn:hover {
-    border-color: var(--theme-color);
+    border-color: var(--primary-color);
     color: #fff;
   }
 .login-btn::before {
@@ -349,6 +344,7 @@ h6{
     padding-right: 7rem;
   }
   /* about css */
+  
  .about-icon {
 	font-size: 2.5rem;
 	padding: 1.2rem;
@@ -374,22 +370,32 @@ h6{
   box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.57);;
 }
 .places-title{
-  color: var(--theme-color);
+  color: var(--primary-color);
 
 }
 /* services css */
 
 .service-card{
   font-size: 1.5rem;
-  background-color:var(--theme-color);
+  background-color:var(--primary-color);
   color: #fff;
+}
+.service-card:hover {
+	background-color: #e9506a;
 }
 .service-card i{
   font-size: 2.5rem;
   color: #e8bc4d;
 }
+/* gallery css */
+.gallery-img{
+  transition: .3s;
+}
+.gallery-img:hover{
+  transform: scale(1.1);
+}
 /* footer css */
-footer{
+.footer-area{
     background-color:#dcdde1;
 }
 .footer-text{
@@ -409,7 +415,7 @@ h4.footer-heading {
     content: "";
     height: .2rem;
     width: 5rem;
-    background-color: var(--theme-color);
+    background-color: var(--primary-color);
     bottom: -32%;
     left: 0%;
   }
@@ -417,7 +423,7 @@ h4.footer-heading {
 	list-style: disclosure-closed;
 }
 .footer-copy-text {
-	color: var(--theme-color);
+	color: var(--primary-color);
 	height: 6vh;
 	font-size: 1rem;
 	display: flex;
@@ -426,7 +432,7 @@ h4.footer-heading {
 }
 .footer-btn {
 	margin-top: 5rem;
-	color: var(--theme-color);
+	color: var(--primary-color);
 	background-color: #010203;
 	padding: 1rem 1.5rem;
 	font-size: 1.4rem;
@@ -434,5 +440,13 @@ h4.footer-heading {
   border: none;
 }
 .footer-btn:hover{
-  color: #fff;
+ background-color: #333;
+ color: var(--primary-color);
+}
+.footer-bottom {
+	margin-top: -3rem;
+}
+.footer-bottom p{
+  margin-bottom: 0;
+  padding: 2rem;
 }
