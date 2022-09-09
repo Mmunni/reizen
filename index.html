@@ -19,22 +19,52 @@
 
 <body>
   <!-- header area start here -->
-  <header>
-    <div class="container-fluid">
-      <div class="info py-3 text-center">
-        <p class=" text-white "><i class="fa-solid fa-envelope"></i>
-          <a href="#" class="text-white px-2">info@reizen.com</a>
-          <i class="fa-solid fa-phone px-2"></i>123456789
-        </p>
-      </div>
+  <div class="container-fluid info">
+    <div class=" py-3 text-center">
+      <p class=" text-white "><i class="fa-solid fa-envelope"></i>
+        <a href="#" class="text-white px-2">info@reizen.com</a>
+        <i class="fa-solid fa-phone px-2"></i>123456789
+      </p>
     </div>
-    <!-- navbar -->
-    <div class="container-fluid">
-      <div class="banner">
-        <nav class="navbar ">
+  </div>
+  <!-- navbar -->
+  <header class=" header-area header-fixed">
+    <div class="container">
+      <nav class="">
+        <div class="logo">
+          <a class="navbar-brand text-white fs-1 fw-semibold logo" href="#">Reizen</a>
+        </div>
+        <div class="right-side">
+              <input class="form-control  search-field" type="search" placeholder="Search tourist place"
+                aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass text-white search-icon px-2"></i>
+              <a href="login-register.html" target="_blank" class="btn login-btn" > Login</a>
+              <div class="menu" id="nav-menu">
+                <i class="fa-solid fa-xmark fs-2 close-menu" id="close-menu"></i>
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Gallery</a></li>
+                  <li><a href="">Places</a></li>
+                </ul>
+              </div>
+              <i class="fa-solid fa-bars text-white fs-3 text-white  mt-2  menu-icon" id="open-menu"></i>
+        </div>
+       
+      </div>
+      </nav>
+        <!-- <nav class="navbar py-0">
           <div class="container nav-line">
             <a class="navbar-brand text-white fs-1 fw-semibold logo" href="#">Reizen</a>
+            <form class="d-flex justify-content-end px-2 form" role="search">
+              <input class="form-control  search-field" type="search" placeholder="Search tourist place"
+                aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass text-white search-icon px-2"></i>
+              <a href="login-register.html" target="_blank" class="btn login-btn text-white" > Login</a>
+            </form>
             <div class="menu d-none" id="nav-menu">
+              <i class="fa-solid fa-xmark fs-2 close-menu" id="close-menu"></i>
               <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -42,28 +72,20 @@
                 <li><a href="">Gallery</a></li>
                 <li><a href="">Places</a></li>
               </ul>
-              <i class="fa-solid fa-xmark fs-2 close-menu" id="close-menu"></i>
             </div>
-            <form class="d-flex justify-content-end px-2 form" role="search">
-              <input class="form-control  search-field" type="search" placeholder="Search tourist place"
-                aria-label="Search">
-              <i class="fa-solid fa-magnifying-glass text-white search-icon px-2"></i>
-              <a href="login-register.html" target="_blank" class="btn login-btn text-white" > Login</a>
-              <i class="fa-solid fa-bars text-white fs-3 text-white  mt-2  menu-icon" id="open-menu"></i>
-            </form>
+            <i class="fa-solid fa-bars text-white fs-3 text-white  mt-2  menu-icon" id="open-menu"></i>
           </div>
-        </nav>
-      </div>
+        </nav> -->
     </div>
-    <div class="banner-text text-center">
+  </header>
+    <!-- banner area start-->
+    <section class="banner">
+    <div class="banner-text mx-auto text-center">
       <h1>Welcome to Sylhet</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam, <br>
         officiis nostrum culpa illum porro delectus dolor quas fuga? Voluptas!</p>
     </div>
-    </div>
-    </div>
-  </header>
-  </div>
+  </section>
   <!-- header area end here -->
   <!-- main area start here -->
   <main>
