@@ -58,6 +58,9 @@ h5{
 h6{
     font-size: 0.9rem;
 }
+.pt-100{
+  padding-top: 10rem;
+}
 .pt-80{
   padding-top: 8rem;
 }
@@ -397,22 +400,31 @@ transition: width 0.5s;
 .icon-bg-3{
   background: linear-gradient(to right, rgba(255,175,77,1) 50%, rgba(255,145,10,1) 50%);
 }
-.card-text{
-  font-size: 1.4rem;
-}
-.card-body h3 {
-	padding: 2rem 0 1rem;
-}
 .single-about {
-  width: 38rem;
-  margin-right: 2rem;
-  background-color: #fff;
+	background-color: #fff;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  transition: .3s;
 }
+
 .single-about:hover{
-  box-shadow: 0 0 5px rgba(0,0,0,0.7);
+  box-shadow: 0 0 3.5rem rgba(0,0,0,0.7);
+}
+.single-about h3 {
+	padding: 2rem 0 1.5rem;
 }
 /* places css */
+.places-card{
+  background-color: #fff;
+	box-shadow: .2rem .2rem .5rem rgba(0,0,0,0.7);
+  transition: .3s;
+}
+.places-card:hover{
+  box-shadow: 0 0 3.5rem rgba(0,0,0,0.7);
+}
+.places-card p {
+	color: #000;
+	padding-bottom: 1.5rem;
+}
 .card-image {
 	position: relative;
 	top: -2.5rem;
@@ -424,13 +436,17 @@ transition: width 0.5s;
 }
 /* services css */
 
-.service-card{
-  font-size: 1.5rem;
-  background-color:var(--primary-color);
-  color: #fff;
+.service-card {
+	font-size: 1.5rem;
+	background-color: var(--primary-color);
+	color: #fff;
+	box-shadow: .2rem .2rem .5rem rgba(0,0,0,0.7);
+	margin-bottom: 1.5rem;
+  transition: .3s;
 }
 .service-card:hover {
 	background-color: #e9506a;
+  box-shadow: 0 0 3.5rem rgba(0,0,0,0.7);
 }
 .service-card i{
   font-size: 2.5rem;
@@ -455,6 +471,16 @@ transition: width 0.5s;
 	margin-top: 1rem;
 	margin-right: 1rem;
 }
+.icon-shadow {
+	box-shadow: .2rem .2rem .5rem rgba(0,0,0,0.3);
+	background-color: #fff;
+  padding: .7rem;
+	border-radius: .4rem;
+	margin-bottom: 2.8rem;
+}
+.icon-shadow:hover{
+  box-shadow:  .5rem .5rem 1rem rgba(0,0,0,0.5);
+}
 h4.footer-heading {
     position: relative;
   
@@ -471,6 +497,14 @@ h4.footer-heading {
   .footer-items {
 	list-style: disclosure-closed;
 }
+.footer-items li, .contact-info li {
+	margin-bottom: .3rem;
+}
+.footer-items li a, .contact-info li a  {
+	color: #000;
+	font-size: 1.3rem;
+}
+
 .footer-copy-text {
 	color: var(--primary-color);
 	height: 6vh;

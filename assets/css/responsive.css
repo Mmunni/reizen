@@ -1,16 +1,33 @@
 /* Medium Layout: 1280px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-   
+	/* p {
+		font-size: 1.4rem;
+	}
+	.single-about {
+		width: 310px;
+		margin-right: 1.5rem;
+		padding: 3rem;
+		transition: .3s;
+	} */
 }
 
 
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-   html{
+   /* html{
       font-size: 61%;
    }
+   p {
+	font-size: 1.3rem;
+}
+   .single-about {
+	width: 230px;
+	margin-right: 1.5rem;
+	padding: 2rem;
+} */
+
 
 }
 
@@ -36,9 +53,9 @@
 .banner-text h1 {
 	font-size: 4.5rem;
 }
-.single-about {
+/* .single-about {
    margin:0 1rem 2rem;
- }
+ } */
 
 }
 
