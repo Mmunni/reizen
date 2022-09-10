@@ -371,14 +371,16 @@ transition: width 0.5s;
   }
   /* ---- */
 .banner-text {
-  position: absolute;
+   position: absolute; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 } 
-.banner-text h1{
+.auto-input{
   color: var(--primary-color);
+}
+.banner-text h1{
+  color:#fff;
   font-size: 5rem;
   padding-bottom: 1rem;
   font-size: 5rem;
@@ -409,9 +411,7 @@ transition: width 0.5s;
 .single-about:hover{
   box-shadow: 0 0 3.5rem rgba(0,0,0,0.7);
 }
-.single-about h3 {
-	padding: 2rem 0 1.5rem;
-}
+
 /* places css */
 .places-card{
   background-color: #fff;
