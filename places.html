@@ -47,6 +47,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="">About</a></li>
                   <li><a href="">Blog</a></li>
+                  <li><a href="">Services</a></li>
                   <li><a href="">Gallery</a></li>
                   <li><a href="places.html">Places</a></li>
                 </ul>
@@ -58,9 +59,9 @@
     </div>
   </header>
     <!-- banner area start-->
-    <section class="banner">
+    <section class="banner bg"  style="background-image:url(assets/images/places/lalakhal.jpg) ;">
     <div class="banner-text text-center">
-      <h1>Welcome To Sylhet</h1>
+      <h1>Welcome <span class="auto-input"></span></h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam, <br>
         officiis nostrum culpa illum porro delectus dolor quas fuga? Voluptas!</p>
     </div>
@@ -266,10 +267,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
-    <!-- on scrool cdn link -->
+     <!-- on scrool cdn link -->
   <script src="assets/js/wow.min.js"></script>
+  <!-- auto type js cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
+    // wow js
     new WOW().init();
+//  auto type js
+  const typed = new Typed('.auto-input', {
+  strings: ['to Sylhet'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true
+});
 </script>
 </body>
 </html>

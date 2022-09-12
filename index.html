@@ -58,9 +58,9 @@
     </div>
   </header>
     <!-- banner area start-->
-    <section class="banner">
+    <section class="banner bg" style="background-image:url(assets/images/banner/banner-img.jpg) ;">
     <div class="banner-text text-center">
-      <h1>Welcome To Sylhet</h1>
+      <h1>Welcome <span class="auto-input"></span></h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam, <br>
         officiis nostrum culpa illum porro delectus dolor quas fuga? Voluptas!</p>
     </div>
@@ -300,8 +300,18 @@
     crossorigin="anonymous"></script>
     <!-- on scrool cdn link -->
   <script src="assets/js/wow.min.js"></script>
+  <!-- auto type js cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
+    // wow js
     new WOW().init();
+//  auto type js
+  const typed = new Typed('.auto-input', {
+  strings: ['to Sylhet'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true
+});
 </script>
 </body>
 </html>

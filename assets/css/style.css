@@ -237,12 +237,23 @@ h6{
   left: 0;
   bottom: -.5rem;
 }
-.banner {
-    background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/banner/banner-img.jpg');
-    height: 90vh;
-    position: relative; 
+.bg {
+    height: 70vh;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 2;
+}
+.bg::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: -1;
 }
 /* ---- */
 header{
@@ -381,7 +392,7 @@ transition: width 0.5s;
   color: var(--primary-color);
 }
 .banner-text h1{
-  color:var(--primary-color);
+  color:#fff;
   font-size: 5rem;
   padding-bottom: 1rem;
   font-size: 5rem;
